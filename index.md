@@ -2,10 +2,10 @@
 
 ---
 
-### Category Name 1 
+### Projects
 
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Unbreakable Phone](https://nadjito.itch.io/unbreakable-phone)
+<img src="images/UBCover.png?raw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
