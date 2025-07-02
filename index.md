@@ -4,9 +4,10 @@
 
 ### Projects
 
+<div>
+<img src="images/UP.png?raw=true"/>
 [Unbreakable Phone](https://nadjito.itch.io/unbreakable-phone)
-<img src="images/UBCover.png?raw=true"/>
-
+</div>
 ---
 [Volcano Heart](https://ritaguimaraes.itch.io/volcano-heart)
 <img src="images/VH.png?raw=true"/>
