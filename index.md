@@ -18,22 +18,50 @@
   </div>
 </div>
 ---
-[Volcano Heart](https://ritaguimaraes.itch.io/volcano-heart)
-<img src="images/VH.png?raw=true"/>
+
+<div>
+  <a href="https://ritaguimaraes.itch.io/volcano-heart">
+    <img src="images/VH.png?raw=true"/>
+  </a>
+  <div>
+    <a href="https://ritaguimaraes.itch.io/volcano-heart">
+      Volcano Heart
+    </a>
+    <p>
+        2D pixel art game that combines exploration, combat, and puzzle solving, made in team of 4 during video game development masters. Programmed bosses and grapplehook mechanic.
+    </p>
+  </div>
+</div>
 
 ---
-[Lords of Conflict](https://guybota.itch.io/lords-of-conflict)
-<img src="images/LOC.png?raw=true"/>
+
+<div>
+  <a href="https://guybota.itch.io/lords-of-conflict">
+    <img src="images/LOC.png?raw=true"/>
+  </a>
+  <div>
+    <a href="https://guybota.itch.io/lords-of-conflict">
+      Lords od Conflict
+    </a>
+    <p>
+        2D strategy sandbox RPG prototype, solo devoloped as personal project before entering masters.
+    </p>
+  </div>
+</div>
 
 ---
 
-### Category Name 2
+### Programming languages
 
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
+- C#
+- JavaScript
+- C++
+- C
+- SQL
+- Python
+- HTML
+- XAML
+- Matlab
 
 ---
 
