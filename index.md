@@ -5,8 +5,17 @@
 ### Projects
 
 <div>
-<img src="images/UP.png?raw=true"/>
-[Unbreakable Phone](https://nadjito.itch.io/unbreakable-phone)
+  <a href="https://nadjito.itch.io/unbreakable-phone">
+    <img src="images/UP.png?raw=true"/>
+  </a>
+  <div>
+    <a href="https://nadjito.itch.io/unbreakable-phone">
+      Unbreakable Phone
+    </a>
+    <p>
+       First person game, made in team of 5 during video game development masters. Programmed throwing mechanics and special abilities, also designed all menus and UI.
+    </p>
+  </div>
 </div>
 ---
 [Volcano Heart](https://ritaguimaraes.itch.io/volcano-heart)
