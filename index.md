@@ -8,12 +8,12 @@
 <img src="images/UBCover.png?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Volcano Heart](https://ritaguimaraes.itch.io/volcano-heart)
+<img src="images/VH.png?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Lords of Conflict](https://guybota.itch.io/lords-of-conflict)
+<img src="images/LOC.png?raw=true"/>
 
 ---
 
