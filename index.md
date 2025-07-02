@@ -41,7 +41,7 @@
   </a>
   <div>
     <a href="https://guybota.itch.io/lords-of-conflict">
-      Lords od Conflict
+      Lords of Conflict
     </a>
     <p>
         2D strategy sandbox RPG prototype, solo devoloped as personal project before entering masters.
