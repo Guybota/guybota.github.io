@@ -7,9 +7,11 @@
   <a href="https://nadjito.itch.io/unbreakable-phone">
     Unbreakable Phone (Unreal Engine 5)
   </a>
-  <a href="https://nadjito.itch.io/unbreakable-phone">
-    <img src="images/UP.png?raw=true"/>
-  </a>
+  <div>
+    <a href="https://nadjito.itch.io/unbreakable-phone">
+      <img src="images/UP.png?raw=true"/>
+    </a>
+  </div>
   <p>
      First person game, made in team of 5 during video game development masters. Programmed throwing mechanics and special abilities, also designed all menus and UI.
   </p>
