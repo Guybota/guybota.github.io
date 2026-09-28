@@ -127,8 +127,8 @@
         }
       });
     }, { rootMargin: "0px 0px -60px 0px" });
-    document.querySelectorAll(".fade").forEach(function (el) { io.observe(el); });
+    document.querySelectorAll(".fade, .project").forEach(function (el) { io.observe(el); });
   } else {
-    document.querySelectorAll(".fade").forEach(function (el) { el.classList.add("shown"); });
+    document.querySelectorAll(".fade, .project").forEach(function (el) { el.classList.add("shown"); });
   }
 })();

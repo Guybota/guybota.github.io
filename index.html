@@ -15,17 +15,17 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/portfolio.css">
 </head>
 <body>
-  <a class="skip" href="#projects">Skip to projects</a>
+  <a class="skip" href="#work">Skip to projects</a>
 
   <header class="top">
     <div class="wrap top-inner">
       <a href="#" class="brand">André Miranda</a>
       <nav aria-label="Main">
-        <a href="#projects">Projects</a>
+        <a href="#work">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
@@ -35,13 +35,15 @@
   </header>
 
   <main>
-    <section class="intro wrap">
-      <img class="portrait" src="images/profile.webp" alt="André Miranda" width="480" height="480">
-      <div>
+    <section class="hero wrap">
+      <div class="hero-text">
+        <div class="hello">
+          <img class="portrait" src="images/profile.webp" alt="André Miranda" width="480" height="480">
+          <p class="where">Valença, Portugal<br>Open to junior roles</p>
+        </div>
         <h1>André Miranda</h1>
-        <p class="role">Game programmer and junior software developer, based in Portugal.</p>
-        <p>I'm finishing an MSc in Digital Game Development at the University of Aveiro, after a BSc in Computer Engineering at UTAD. Most of my work is in C# and Unity, plus some Unreal Engine 5 and plain JavaScript. Below are the seven projects I've shipped so far: four on my own and three in small teams. For each one I say what I actually did.</p>
-        <p>I'm looking for a junior programming role, in games or general software.</p>
+        <p class="role">Game programmer and junior software developer.</p>
+        <p>I'm finishing an MSc in Digital Game Development at the University of Aveiro, after a BSc in Computer Engineering at UTAD. Most of my work is in C# and Unity, plus some Unreal Engine 5 and plain JavaScript. Below are the seven projects I've shipped so far, four on my own and three in small teams, and what I actually did on each.</p>
         <ul class="links">
           <li><a class="btn primary" href="Andre_Miranda_CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></li>
           <li><a class="btn" href="mailto:andremiranda2001@gmail.com">Email</a></li>
@@ -50,154 +52,196 @@
           <li><a class="btn" href="https://guybota.itch.io/" target="_blank" rel="noopener">itch.io</a></li>
         </ul>
       </div>
+      <div class="mosaic" aria-hidden="true">
+        <a href="#p-superbug" tabindex="-1" style="--c:#2bb3a0"><img src="images/projects/superbug-banner.webp" alt=""></a>
+        <a href="#p-scoundrel" tabindex="-1" style="--c:#3d8a4f"><img src="images/projects/scoundrel-2.webp" alt=""></a>
+        <a href="#p-up" tabindex="-1" style="--c:#6f9a78"><img src="images/projects/up-5.webp" alt=""></a>
+        <a href="#p-vh" tabindex="-1" style="--c:#e0622a"><img src="images/projects/vh-2.webp" alt=""></a>
+        <a href="#p-loc" tabindex="-1" style="--c:#b8904a"><img src="images/projects/loc-2.webp" alt=""></a>
+      </div>
     </section>
 
-    <section id="projects" class="wrap">
+    <section class="index wrap" id="work">
       <h2>Projects</h2>
+      <ol>
+        <li><a href="#p-superbug" style="--c:#2bb3a0"><span class="n">01</span><span class="t">Superbug</span><span class="d">Unity · Solo · MSc dissertation</span><span class="y">2026</span></a></li>
+        <li><a href="#p-scoundrel" style="--c:#3d8a4f"><span class="n">02</span><span class="t">Scoundrel Tower</span><span class="d">Unity · Solo · WebGL</span><span class="y">2026</span></a></li>
+        <li><a href="#p-mtg" style="--c:#b3362c"><span class="n">03</span><span class="t">MTG Life Counter</span><span class="d">JavaScript · Solo · Web app</span><span class="y">2026</span></a></li>
+        <li><a href="#p-up" style="--c:#6f9a78"><span class="n">04</span><span class="t">Unbreakable Phone</span><span class="d">Unreal Engine 5 · Team of 5</span><span class="y">2025</span></a></li>
+        <li><a href="#p-newsdle" style="--c:#4c5bd4"><span class="n">05</span><span class="t">Newsdle</span><span class="d">HTML5 · Team of 2</span><span class="y">2025</span></a></li>
+        <li><a href="#p-vh" style="--c:#e0622a"><span class="n">06</span><span class="t">Volcano Heart</span><span class="d">Unity · Team of 4</span><span class="y">2024–25</span></a></li>
+        <li><a href="#p-loc" style="--c:#b8904a"><span class="n">07</span><span class="t">Lords of Conflict</span><span class="d">Unity · Solo · Prototype</span><span class="y">2024</span></a></li>
+      </ol>
+    </section>
+
+    <section id="projects">
+      <h2 class="visually-hidden">Project details</h2>
 
       <!-- Superbug -->
-      <article class="project fade">
-        <div class="media">
-          <button class="shot" data-gallery="superbug" data-index="0" aria-label="View Superbug images">
-            <img src="images/projects/superbug-banner.webp" alt="Superbug title screen: a bacterium swimming in green water" loading="lazy">
-          </button>
-        </div>
-        <div class="info">
-          <h3>Superbug</h3>
-          <p class="meta">2026 · Unity, C# · Solo · MSc dissertation</p>
-          <p>A top-down action game where you play a bacterium in a wastewater treatment plant, stealing DNA from other microbes to gain their abilities. I built it for my master's dissertation on using humour to communicate microbiology. The game is the instrument of a study where players answer questionnaires before and after playing.</p>
-          <ul>
-            <li>Energy (ATP) system that every action draws from: moving, abilities and healing.</li>
-            <li>Pilus grapple that pulls plasmids off other microbes. Plasmids have to be assimilated from a menu before they decay, and each species drops the DNA for its own ability.</li>
-            <li>Keyboard and mouse, Xbox and PlayStation controller support.</li>
-          </ul>
-          <p class="actions"><a href="https://guybota.itch.io/superbug" target="_blank" rel="noopener">Download on itch.io (Windows)</a></p>
+      <article class="project" id="p-superbug" style="--c:#2bb3a0">
+        <div class="wrap project-inner">
+          <div class="media">
+            <button class="shot" data-gallery="superbug" data-index="0" aria-label="View Superbug images">
+              <img src="images/projects/superbug-banner.webp" alt="Superbug title screen: a bacterium swimming in green water" loading="lazy">
+            </button>
+          </div>
+          <div class="info">
+            <p class="num">01</p>
+            <h3>Superbug</h3>
+            <ul class="tags"><li>2026</li><li>Unity, C#</li><li>Solo</li><li>MSc dissertation</li></ul>
+            <p>A top-down action game where you play a bacterium in a wastewater treatment plant, stealing DNA from other microbes to gain their abilities. I built it for my master's dissertation on using humour to communicate microbiology. The game is the instrument of a study where players answer questionnaires before and after playing.</p>
+            <ul>
+              <li>Energy (ATP) system that every action draws from: moving, abilities and healing.</li>
+              <li>Pilus grapple that pulls plasmids off other microbes. Plasmids have to be assimilated from a menu before they decay, and each species drops the DNA for its own ability.</li>
+              <li>Keyboard and mouse, Xbox and PlayStation controller support.</li>
+            </ul>
+            <p class="actions"><a href="https://guybota.itch.io/superbug" target="_blank" rel="noopener">Download on itch.io (Windows)</a></p>
+          </div>
         </div>
       </article>
 
       <!-- Scoundrel Tower -->
-      <article class="project fade">
-        <div class="media">
-          <button class="shot" data-gallery="scoundrel" data-index="0" aria-label="View Scoundrel Tower screenshots">
-            <img src="images/projects/scoundrel-1.webp" alt="Scoundrel Tower: a room of four cards on a green table, with the shop open" loading="lazy">
-          </button>
-          <div class="thumbs" data-gallery="scoundrel"></div>
-        </div>
-        <div class="info">
-          <h3>Scoundrel Tower</h3>
-          <p class="meta">2026 · Unity, C# · Solo · WebGL</p>
-          <p>A roguelike version of Zach Gage and Kurt Bieg's solitaire card game <em>Scoundrel</em>. Each room is dealt from your deck, and you choose the order in which to fight monsters, equip weapons and drink potions. There's no score: a run is measured by how deep you get.</p>
-          <ul>
-            <li>Rules for jokers, vouchers, consumables, weapon forging and bosses that change the rules of a floor.</li>
-            <li>Seeded daily run that is the same for everyone, autosave, English and Portuguese.</li>
-            <li>WebGL build that plays in desktop and mobile browsers.</li>
-          </ul>
-          <p class="actions"><a href="https://guybota.itch.io/scoundrel-tower" target="_blank" rel="noopener">Play in the browser</a></p>
+      <article class="project flip" id="p-scoundrel" style="--c:#3d8a4f">
+        <div class="wrap project-inner">
+          <div class="media">
+            <button class="shot" data-gallery="scoundrel" data-index="0" aria-label="View Scoundrel Tower screenshots">
+              <img src="images/projects/scoundrel-1.webp" alt="Scoundrel Tower: a room of four cards on a green table, with the shop open" loading="lazy">
+            </button>
+            <div class="thumbs" data-gallery="scoundrel"></div>
+          </div>
+          <div class="info">
+            <p class="num">02</p>
+            <h3>Scoundrel Tower</h3>
+            <ul class="tags"><li>2026</li><li>Unity, C#</li><li>Solo</li><li>WebGL</li></ul>
+            <p>A roguelike version of Zach Gage and Kurt Bieg's solitaire card game <em>Scoundrel</em>. Each room is dealt from your deck, and you choose the order in which to fight monsters, equip weapons and drink potions. There's no score: a run is measured by how deep you get.</p>
+            <ul>
+              <li>Rules for jokers, vouchers, consumables, weapon forging and bosses that change the rules of a floor.</li>
+              <li>Seeded daily run that is the same for everyone, autosave, English and Portuguese.</li>
+              <li>WebGL build that plays in desktop and mobile browsers.</li>
+            </ul>
+            <p class="actions"><a href="https://guybota.itch.io/scoundrel-tower" target="_blank" rel="noopener">Play in the browser</a></p>
+          </div>
         </div>
       </article>
 
       <!-- MTG Life Counter -->
-      <article class="project fade">
-        <div class="media phones">
-          <button class="shot" data-gallery="mtg" data-index="0" aria-label="View MTG Life Counter screenshots">
-            <img src="images/projects/mtg-board.webp" alt="MTG Life Counter: four players with commander card art as backgrounds" loading="lazy">
-          </button>
-          <button class="shot" data-gallery="mtg" data-index="1" aria-label="View MTG Life Counter game modes">
-            <img src="images/projects/mtg-menu.webp" alt="MTG Life Counter: game mode selection menu" loading="lazy">
-          </button>
-        </div>
-        <div class="info">
-          <h3>MTG Life Counter</h3>
-          <p class="meta">2026 · JavaScript, HTML, CSS · Solo · Web app</p>
-          <p>A life counter for Magic: The Gathering, built for a phone left in the middle of the table: the players at the top see their counters rotated to face them. It has no framework or build step: about 5,000 lines of plain JavaScript, split into state, UI and API modules.</p>
-          <ul>
-            <li>Five modes for 2 to 8 players: Commander, 1v1, free, teams, and a 6-player Battle Royale with zones, events and loot.</li>
-            <li>Commander search and card art through the Scryfall REST API.</li>
-            <li>Installable PWA. A service worker caches the app so it works offline, and games and player profiles are saved in localStorage.</li>
-          </ul>
-          <p class="actions"><a href="https://github.com/Guybota/mtg-life" target="_blank" rel="noopener">Source on GitHub</a></p>
+      <article class="project" id="p-mtg" style="--c:#b3362c">
+        <div class="wrap project-inner">
+          <div class="media phones">
+            <button class="shot" data-gallery="mtg" data-index="0" aria-label="View MTG Life Counter screenshots">
+              <img src="images/projects/mtg-board.webp" alt="MTG Life Counter: four players with commander card art as backgrounds" loading="lazy">
+            </button>
+            <button class="shot" data-gallery="mtg" data-index="1" aria-label="View MTG Life Counter game modes">
+              <img src="images/projects/mtg-menu.webp" alt="MTG Life Counter: game mode selection menu" loading="lazy">
+            </button>
+          </div>
+          <div class="info">
+            <p class="num">03</p>
+            <h3>MTG Life Counter</h3>
+            <ul class="tags"><li>2026</li><li>JavaScript, HTML, CSS</li><li>Solo</li><li>Web app</li></ul>
+            <p>A life counter for Magic: The Gathering, built for a phone left in the middle of the table: the players at the top see their counters rotated to face them. It has no framework or build step: about 5,000 lines of plain JavaScript, split into state, UI and API modules.</p>
+            <ul>
+              <li>Five modes for 2 to 8 players: Commander, 1v1, free, teams, and a 6-player Battle Royale with zones, events and loot.</li>
+              <li>Commander search and card art through the Scryfall REST API.</li>
+              <li>Installable PWA. A service worker caches the app so it works offline, and games and player profiles are saved in localStorage.</li>
+            </ul>
+            <p class="actions"><a href="https://github.com/Guybota/mtg-life" target="_blank" rel="noopener">Source on GitHub</a></p>
+          </div>
         </div>
       </article>
 
       <!-- Unbreakable Phone -->
-      <article class="project fade">
-        <div class="media">
-          <button class="shot" data-gallery="up" data-index="0" aria-label="View Unbreakable Phone screenshots">
-            <img src="images/projects/up-4.webp" alt="Unbreakable Phone: first-person view in an office corridor, holding an old mobile phone" loading="lazy">
-          </button>
-          <div class="thumbs" data-gallery="up"></div>
-        </div>
-        <div class="info">
-          <h3>Unbreakable Phone</h3>
-          <p class="meta">2025 · Unreal Engine 5 · Team of 5 · MSc project</p>
-          <p>A first-person game where Dona Irene, an elderly woman, takes down a greedy tech company with her old phone and its special powers.</p>
-          <p class="mine"><strong>My part:</strong> I programmed the throwing mechanics and the phone's special abilities, and designed and built all the menus and UI. I also worked on the story, sound design and concept art.</p>
-          <p class="team">With Bernardo Figueiredo, Bruno Duarte, Leonardo Falcão and Pedro Torres.</p>
-          <p class="actions"><a href="https://nadjito.itch.io/unbreakable-phone" target="_blank" rel="noopener">itch.io page</a></p>
-        </div>
-      </article>
-
-      <!-- Volcano Heart -->
-      <article class="project fade">
-        <div class="media">
-          <button class="shot" data-gallery="vh" data-index="0" aria-label="View Volcano Heart screenshots">
-            <img src="images/projects/vh-1.webp" alt="Volcano Heart: a pixel-art dwarf in a dark cave above lava" loading="lazy">
-          </button>
-          <div class="thumbs" data-gallery="vh"></div>
-        </div>
-        <div class="info">
-          <h3>Volcano Heart</h3>
-          <p class="meta">2024–2025 · Unity, C# · Team of 4 · MSc project</p>
-          <p>A 2D pixel-art game with exploration, combat and puzzles, set in ruins inside a volcano. A dwarf goes in to recover an artifact his village needs.</p>
-          <p class="mine"><strong>My part:</strong> I programmed the bosses and the grappling hook, and did the sound design.</p>
-          <p class="team">With Ana Rita Guimarães, Bruno Duarte and Pedro Torres.</p>
-          <p class="actions"><a href="https://ritaguimaraes.itch.io/volcano-heart" target="_blank" rel="noopener">itch.io page</a></p>
-        </div>
-      </article>
-
-      <!-- Lords of Conflict -->
-      <article class="project fade">
-        <div class="media">
-          <button class="shot" data-gallery="loc" data-index="0" aria-label="View Lords of Conflict screenshots">
-            <img src="images/projects/loc-1.webp" alt="Lords of Conflict: a unit's movement path on a tile map" loading="lazy">
-          </button>
-          <div class="thumbs" data-gallery="loc"></div>
-        </div>
-        <div class="info">
-          <h3>Lords of Conflict</h3>
-          <p class="meta">2024 · Unity, C# · Solo · Prototype</p>
-          <p>A turn-based tactics game inspired by <em>Fire Emblem</em> and <em>Advance Wars</em>, which I started on my own before the master's. It's a prototype: the systems work, but it isn't a finished game. I wrote all the code; the art and music are third-party assets.</p>
-          <ul>
-            <li>Grid movement and combat between units with their own stats.</li>
-            <li>A shop where players spend money to recruit new units.</li>
-            <li>Match setup with map size and number of players, plus a Battle Royale mode.</li>
-          </ul>
-          <p class="actions"><a href="https://guybota.itch.io/lords-of-conflict" target="_blank" rel="noopener">Play in the browser</a></p>
+      <article class="project flip" id="p-up" style="--c:#6f9a78">
+        <div class="wrap project-inner">
+          <div class="media">
+            <button class="shot" data-gallery="up" data-index="0" aria-label="View Unbreakable Phone screenshots">
+              <img src="images/projects/up-4.webp" alt="Unbreakable Phone: first-person view in an office corridor, holding an old mobile phone" loading="lazy">
+            </button>
+            <div class="thumbs" data-gallery="up"></div>
+          </div>
+          <div class="info">
+            <p class="num">04</p>
+            <h3>Unbreakable Phone</h3>
+            <ul class="tags"><li>2025</li><li>Unreal Engine 5</li><li>Team of 5</li><li>MSc project</li></ul>
+            <p>A first-person game where Dona Irene, an elderly woman, takes down a greedy tech company with her old phone and its special powers.</p>
+            <p class="mine"><strong>My part:</strong> I programmed the throwing mechanics and the phone's special abilities, and designed and built all the menus and UI. I also worked on the story, sound design and concept art.</p>
+            <p class="team">With Bernardo Figueiredo, Bruno Duarte, Leonardo Falcão and Pedro Torres.</p>
+            <p class="actions"><a href="https://nadjito.itch.io/unbreakable-phone" target="_blank" rel="noopener">itch.io page</a></p>
+          </div>
         </div>
       </article>
 
       <!-- Newsdle -->
-      <article class="project fade">
-        <div class="media">
-          <button class="shot" data-gallery="newsdle" data-index="0" aria-label="View Newsdle screenshots">
-            <img src="images/projects/newsdle-5.webp" alt="Newsdle: reviewing a news article with publish and reject buttons" loading="lazy">
-          </button>
-          <div class="thumbs" data-gallery="newsdle"></div>
+      <article class="project" id="p-newsdle" style="--c:#4c5bd4">
+        <div class="wrap project-inner">
+          <div class="media">
+            <button class="shot" data-gallery="newsdle" data-index="0" aria-label="View Newsdle screenshots">
+              <img src="images/projects/newsdle-5.webp" alt="Newsdle: reviewing a news article with publish and reject buttons" loading="lazy">
+            </button>
+            <div class="thumbs" data-gallery="newsdle"></div>
+          </div>
+          <div class="info">
+            <p class="num">05</p>
+            <h3>Newsdle</h3>
+            <ul class="tags"><li>2025</li><li>HTML5</li><li>Team of 2</li><li>MSc course project</li></ul>
+            <p>A browser game about spotting misinformation. You moderate a news site over four days and decide which articles to publish and which to reject. Each day focuses on something different: checking sources, clickbait and manipulation, and misleading statistics and graphs.</p>
+            <ul>
+              <li>Sources can be marked as trusted or blacklisted, and that list carries over between articles.</li>
+              <li>Scoring is a balance between audience and credibility, with bonuses for fast, correct decisions.</li>
+            </ul>
+            <p class="actions"><a href="https://guybota.itch.io/newsdle" target="_blank" rel="noopener">Play in the browser</a></p>
+          </div>
         </div>
-        <div class="info">
-          <h3>Newsdle</h3>
-          <p class="meta">2025 · HTML5 · Team of 2 · MSc course project</p>
-          <p>A browser game about spotting misinformation. You moderate a news site over four days and decide which articles to publish and which to reject. Each day focuses on something different: checking sources, clickbait and manipulation, and misleading statistics and graphs.</p>
-          <ul>
-            <li>Sources can be marked as trusted or blacklisted, and that list carries over between articles.</li>
-            <li>Scoring is a balance between audience and credibility, with bonuses for fast, correct decisions.</li>
-          </ul>
-          <p class="actions"><a href="https://guybota.itch.io/newsdle" target="_blank" rel="noopener">Play in the browser</a></p>
+      </article>
+
+      <!-- Volcano Heart -->
+      <article class="project flip" id="p-vh" style="--c:#e0622a">
+        <div class="wrap project-inner">
+          <div class="media">
+            <button class="shot" data-gallery="vh" data-index="0" aria-label="View Volcano Heart screenshots">
+              <img src="images/projects/vh-1.webp" alt="Volcano Heart: a pixel-art dwarf in a dark cave above lava" loading="lazy">
+            </button>
+            <div class="thumbs" data-gallery="vh"></div>
+          </div>
+          <div class="info">
+            <p class="num">06</p>
+            <h3>Volcano Heart</h3>
+            <ul class="tags"><li>2024–2025</li><li>Unity, C#</li><li>Team of 4</li><li>MSc project</li></ul>
+            <p>A 2D pixel-art game with exploration, combat and puzzles, set in ruins inside a volcano. A dwarf goes in to recover an artifact his village needs.</p>
+            <p class="mine"><strong>My part:</strong> I programmed the bosses and the grappling hook, and did the sound design.</p>
+            <p class="team">With Ana Rita Guimarães, Bruno Duarte and Pedro Torres.</p>
+            <p class="actions"><a href="https://ritaguimaraes.itch.io/volcano-heart" target="_blank" rel="noopener">itch.io page</a></p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Lords of Conflict -->
+      <article class="project" id="p-loc" style="--c:#b8904a">
+        <div class="wrap project-inner">
+          <div class="media">
+            <button class="shot" data-gallery="loc" data-index="0" aria-label="View Lords of Conflict screenshots">
+              <img src="images/projects/loc-1.webp" alt="Lords of Conflict: a unit's movement path on a tile map" loading="lazy">
+            </button>
+            <div class="thumbs" data-gallery="loc"></div>
+          </div>
+          <div class="info">
+            <p class="num">07</p>
+            <h3>Lords of Conflict</h3>
+            <ul class="tags"><li>2024</li><li>Unity, C#</li><li>Solo</li><li>Prototype</li></ul>
+            <p>A turn-based tactics game inspired by <em>Fire Emblem</em> and <em>Advance Wars</em>, which I started on my own before the master's. It's a prototype: the systems work, but it isn't a finished game. I wrote all the code; the art and music are third-party assets.</p>
+            <ul>
+              <li>Grid movement and combat between units with their own stats.</li>
+              <li>A shop where players spend money to recruit new units.</li>
+              <li>Match setup with map size and number of players, plus a Battle Royale mode.</li>
+            </ul>
+            <p class="actions"><a href="https://guybota.itch.io/lords-of-conflict" target="_blank" rel="noopener">Play in the browser</a></p>
+          </div>
         </div>
       </article>
     </section>
 
-    <section id="skills" class="wrap fade">
+    <div class="about wrap">
+    <section id="skills" class="fade">
       <h2>Skills</h2>
       <dl class="skills">
         <dt>Languages</dt>
@@ -211,7 +255,7 @@
       </dl>
     </section>
 
-    <section id="education" class="wrap fade">
+    <section id="education" class="fade">
       <h2>Education</h2>
       <ol class="timeline">
         <li>
@@ -231,10 +275,15 @@
       </ol>
       <p class="certs">Also: Meta certificates in Programming with JavaScript, Introduction to Front-End Development and Version Control (2023).</p>
     </section>
+    </div>
 
-    <section id="contact" class="wrap fade">
-      <h2>Contact</h2>
-      <p>The best way to reach me is by email: <a href="mailto:andremiranda2001@gmail.com">andremiranda2001@gmail.com</a>. I'm also on <a href="https://www.linkedin.com/in/andr%C3%A9-miranda-05807b258/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p class="big">Email is the fastest way to reach me.</p>
+        <p><a class="mail" href="mailto:andremiranda2001@gmail.com">andremiranda2001@gmail.com</a></p>
+        <p class="also">Also on <a href="https://www.linkedin.com/in/andr%C3%A9-miranda-05807b258/" target="_blank" rel="noopener">LinkedIn</a>, <a href="https://github.com/Guybota" target="_blank" rel="noopener">GitHub</a> and <a href="https://guybota.itch.io/" target="_blank" rel="noopener">itch.io</a>.</p>
+      </div>
     </section>
   </main>
 
