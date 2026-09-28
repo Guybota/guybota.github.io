@@ -150,10 +150,9 @@ h2 { font: 500 13px var(--mono); text-transform: uppercase; letter-spacing: .1em
 .thumbs img { aspect-ratio: 16 / 9; object-fit: cover; width: 100%; }
 
 /* phone frames for the web app */
-.phones { display: flex; gap: 22px; justify-content: center; align-items: flex-start; }
+.phones { display: flex; gap: 22px; justify-content: center; align-items: center; align-self: center; }
 .phones .shot { width: 200px; padding: 7px; border-radius: 30px; background: #111; box-shadow: 0 0 0 1px #333 inset, 0 20px 40px -16px color-mix(in srgb, var(--c) 70%, #000); }
 .phones .shot img { aspect-ratio: 412 / 915; border-radius: 23px; }
-.phones .shot:nth-child(2) { margin-top: 48px; }
 
 /* reveal: image slides up, text fades */
 .js .project .media { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
