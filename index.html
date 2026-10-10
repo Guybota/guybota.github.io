@@ -43,7 +43,7 @@
         </div>
         <h1>André Miranda</h1>
         <p class="role">Game programmer and junior software developer.</p>
-        <p>I'm finishing an MSc in Digital Game Development at the University of Aveiro, after a BSc in Computer Engineering at UTAD. Most of my work is in C# and Unity, plus some Unreal Engine 5 and plain JavaScript. Below are the seven projects I've shipped so far, four on my own and three in small teams, and what I actually did on each.</p>
+        <p>I'm finishing an MSc in Digital Game Development at the University of Aveiro, after a BSc in Computer Engineering at UTAD. Most of my work is in C# and Unity, plus some Unreal Engine 5 and plain JavaScript. Below are the eight projects I've shipped so far, five on my own and three in small teams, and what I actually did on each.</p>
         <ul class="links">
           <li><a class="btn primary" href="Andre_Miranda_CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></li>
           <li><a class="btn" href="mailto:andremiranda2001@gmail.com">Email</a></li>
@@ -67,6 +67,7 @@
         <li><a href="#p-superbug" style="--c:#2bb3a0"><span class="t">Superbug</span><span class="d">Unity, Solo, MSc dissertation</span><span class="y">2026</span></a></li>
         <li><a href="#p-scoundrel" style="--c:#3d8a4f"><span class="t">Scoundrel Tower</span><span class="d">Unity, Solo, WebGL</span><span class="y">2026</span></a></li>
         <li><a href="#p-mtg" style="--c:#b3362c"><span class="t">MTG Life Counter</span><span class="d">JavaScript, Solo, Web app</span><span class="y">2026</span></a></li>
+        <li><a href="#p-md" style="--c:#3f6fa8"><span class="t">Minho Defenders</span><span class="d">JavaScript, Solo, AI game jam</span><span class="y">2026</span></a></li>
         <li><a href="#p-up" style="--c:#6f9a78"><span class="t">Unbreakable Phone</span><span class="d">Unreal Engine 5, Team of 5</span><span class="y">2025</span></a></li>
         <li><a href="#p-newsdle" style="--c:#4c5bd4"><span class="t">Newsdle</span><span class="d">HTML5, Team of 2</span><span class="y">2025</span></a></li>
         <li><a href="#p-vh" style="--c:#e0622a"><span class="t">Volcano Heart</span><span class="d">Unity, Team of 4</span><span class="y">2024–25</span></a></li>
@@ -92,9 +93,9 @@
             <ul>
               <li>Energy (ATP) system that every action draws from: moving, abilities and healing.</li>
               <li>Pilus grapple that pulls plasmids off other microbes. Plasmids have to be assimilated from a menu before they decay, and each species drops the DNA for its own ability.</li>
-              <li>Keyboard and mouse, Xbox and PlayStation controller support.</li>
+              <li>Keyboard and mouse, Xbox and PlayStation controller support, in a browser build and a Windows download.</li>
             </ul>
-            <p class="actions"><a href="https://guybota.itch.io/superbug" target="_blank" rel="noopener">Download on itch.io (Windows)</a></p>
+            <p class="actions"><a href="https://guybota.itch.io/superbug" target="_blank" rel="noopener">Play in the browser</a></p>
           </div>
         </div>
       </article>
@@ -152,8 +153,32 @@
         </div>
       </article>
 
+      <!-- Minho Defenders -->
+      <article class="project flip" id="p-md" style="--c:#3f6fa8">
+        <div class="wrap project-inner">
+          <div class="media">
+            <button class="shot" data-gallery="md" data-index="0" aria-label="View Minho Defenders screenshots">
+              <img src="images/projects/md-1.webp" alt="Minho Defenders: the walled town of Monção drawn as an old map, with towers on the walls and boats crossing the River Minho" width="1400" height="788" loading="lazy">
+            </button>
+            <div class="thumbs" data-gallery="md"></div>
+          </div>
+          <div class="info">
+            <h3>Minho Defenders</h3>
+            <ul class="tags"><li>2026</li><li>JavaScript, Canvas 2D</li><li>Solo</li><li>AI game jam</li></ul>
+            <p>A tower defense set in 1368 on the River Minho, the old border between Portugal and Castile. Castilian boats cross the river to besiege four real fortress towns: Valença, Monção, Cerveira and the Forte da Lagarteira. I made it for Slapjam AI, a game jam for games built with AI tools.</p>
+            <p class="mine"><strong>How it was made:</strong> The code was written with Claude, which I directed and play-tested. No image or audio models were used: the art is drawn by Canvas 2D and SVG code, and the music and sound effects are generated with the Web Audio API.</p>
+            <ul>
+              <li>Four maps, four tower types with two specialisations each, two heroines who level up, and a figure from local legend for each town.</li>
+              <li>Campaign, free play, endless mode and a daily challenge. Co-op for two players on one screen, or online with a room code.</li>
+              <li>A single HTML file with no build step that plays offline, in English and Portuguese.</li>
+            </ul>
+            <p class="actions"><a href="https://guybota.itch.io/minho-defenders" target="_blank" rel="noopener">Play in the browser</a> <a href="https://github.com/Guybota/minho-defenders" target="_blank" rel="noopener">Source on GitHub</a></p>
+          </div>
+        </div>
+      </article>
+
       <!-- Unbreakable Phone -->
-      <article class="project flip" id="p-up" style="--c:#6f9a78">
+      <article class="project" id="p-up" style="--c:#6f9a78">
         <div class="wrap project-inner">
           <div class="media">
             <button class="shot" data-gallery="up" data-index="0" aria-label="View Unbreakable Phone screenshots">
@@ -173,7 +198,7 @@
       </article>
 
       <!-- Newsdle -->
-      <article class="project" id="p-newsdle" style="--c:#4c5bd4">
+      <article class="project flip" id="p-newsdle" style="--c:#4c5bd4">
         <div class="wrap project-inner">
           <div class="media">
             <button class="shot" data-gallery="newsdle" data-index="0" aria-label="View Newsdle screenshots">
@@ -195,7 +220,7 @@
       </article>
 
       <!-- Volcano Heart -->
-      <article class="project flip" id="p-vh" style="--c:#e0622a">
+      <article class="project" id="p-vh" style="--c:#e0622a">
         <div class="wrap project-inner">
           <div class="media">
             <button class="shot" data-gallery="vh" data-index="0" aria-label="View Volcano Heart screenshots">
@@ -215,7 +240,7 @@
       </article>
 
       <!-- Lords of Conflict -->
-      <article class="project" id="p-loc" style="--c:#b8904a">
+      <article class="project flip" id="p-loc" style="--c:#b8904a">
         <div class="wrap project-inner">
           <div class="media">
             <button class="shot" data-gallery="loc" data-index="0" aria-label="View Lords of Conflict screenshots">

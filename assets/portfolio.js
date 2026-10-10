@@ -18,6 +18,12 @@
       ["images/projects/mtg-stats.webp", "Win rate of each deck"],
       ["images/projects/mtg-menu.webp", "Game modes"]
     ],
+    md: [
+      ["images/projects/md-1.webp", "Monção and the Coca dragon"],
+      ["images/projects/md-2.webp", "Forte da Lagarteira and the Lagarteira Octopus"],
+      ["images/projects/md-3.webp", "Vila Nova de Cerveira and the Giant Stag"],
+      ["images/projects/md-cover.webp", "Cover art, drawn by the game's own code"]
+    ],
     up: [
       ["images/projects/up-4.webp", "Office corridor with enemy robots"],
       ["images/projects/up-5.webp", "A wall broken open in the corridor"],
