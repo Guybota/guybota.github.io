@@ -126,23 +126,28 @@
       <article class="project" id="p-mtg" style="--c:#b3362c">
         <div class="wrap project-inner">
           <div class="media phones">
-            <button class="shot" data-gallery="mtg" data-index="0" aria-label="View MTG Life Counter screenshots">
-              <img src="images/projects/mtg-board.webp" alt="MTG Life Counter: four players with commander card art as backgrounds" width="412" height="915" loading="lazy">
+            <button class="shot wide" data-gallery="mtg" data-index="0" aria-label="View MTG Life Counter screenshots">
+              <img src="images/projects/mtg-board.webp" alt="MTG Life Counter: a four-player Commander game, each player's life total over their commander's card art" width="1830" height="824" loading="lazy">
             </button>
-            <button class="shot" data-gallery="mtg" data-index="1" aria-label="View MTG Life Counter game modes">
-              <img src="images/projects/mtg-menu.webp" alt="MTG Life Counter: game mode selection menu" width="412" height="915" loading="lazy">
+            <button class="shot" data-gallery="mtg" data-index="1" aria-label="View the MTG Life Counter ranking screen">
+              <img src="images/projects/mtg-ranking.webp" alt="MTG Life Counter: ELO ranking of five players with league badges" width="824" height="1830" loading="lazy">
+            </button>
+            <button class="shot" data-gallery="mtg" data-index="2" aria-label="View the MTG Life Counter statistics screen">
+              <img src="images/projects/mtg-stats.webp" alt="MTG Life Counter: win rate of each deck as a bar chart" width="824" height="1830" loading="lazy">
             </button>
           </div>
           <div class="info">
             <h3>MTG Life Counter</h3>
             <ul class="tags"><li>2026</li><li>JavaScript, HTML, CSS</li><li>Solo</li><li>Web app</li></ul>
-            <p>A life counter for Magic: The Gathering, built for a phone left in the middle of the table: the players at the top see their counters rotated to face them. It has no framework or build step: about 5,000 lines of plain JavaScript, split into state, UI and API modules.</p>
+            <p>A life counter for Magic: The Gathering, built for a phone or tablet left in the middle of the table: the players on the far side see their counters rotated to face them. It also keeps a playgroup's history, saving every finished game against the decks and players that took part. It has no framework or build step: about 10,000 lines of plain JavaScript, split into state, data and UI modules.</p>
             <ul>
-              <li>Five modes for 2 to 8 players: Commander, 1v1, free, teams, and a 6-player Battle Royale with zones, events and loot.</li>
+              <li>Five modes for 2 to 8 players: Commander, 1v1, free, teams, and a 6-player Battle Royale with zones, events and loot. It tracks commander damage, partner commanders, poison and other counters, and times each turn.</li>
+              <li>Deck and player profiles with win rates, head-to-head records and an ELO ranking with leagues. The charts are drawn without a chart library.</li>
               <li>Commander search and card art through the Scryfall REST API.</li>
-              <li>Installable PWA. A service worker caches the app so it works offline, and games and player profiles are saved in localStorage.</li>
+              <li>Optional cloud sync for a playgroup, stored in Supabase and joined with a group code. Two phones can also merge their data by QR code.</li>
+              <li>Installable PWA that works offline, in English and Portuguese, with 33 Playwright tests.</li>
             </ul>
-            <p class="actions"><a href="https://github.com/Guybota/mtg-life" target="_blank" rel="noopener">Source on GitHub</a></p>
+            <p class="actions"><a href="https://guybota.github.io/mtg-life/" target="_blank" rel="noopener">Open the app</a> <a href="https://github.com/Guybota/mtg-life" target="_blank" rel="noopener">Source on GitHub</a></p>
           </div>
         </div>
       </article>

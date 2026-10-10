@@ -14,8 +14,9 @@
     ],
     mtg: [
       ["images/projects/mtg-board.webp", "Four-player Commander game"],
-      ["images/projects/mtg-menu.webp", "Game modes"],
-      ["images/projects/mtg-setup.webp", "Game setup"]
+      ["images/projects/mtg-ranking.webp", "ELO ranking of the playgroup"],
+      ["images/projects/mtg-stats.webp", "Win rate of each deck"],
+      ["images/projects/mtg-menu.webp", "Game modes"]
     ],
     up: [
       ["images/projects/up-4.webp", "Office corridor with enemy robots"],
