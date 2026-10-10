@@ -1,4 +1,4 @@
-// Screenshot galleries, the image viewer and a small fade-in on scroll.
+// Screenshot galleries and the image viewer.
 (function () {
   "use strict";
 
@@ -43,8 +43,6 @@
       ["images/projects/newsdle-2.webp", "The chief editor's briefing for day 1"]
     ]
   };
-
-  document.documentElement.classList.add("js");
 
   // Thumbnail strips under the main image.
   document.querySelectorAll(".thumbs").forEach(function (strip) {
@@ -116,19 +114,4 @@
   function onScroll() { top.classList.toggle("scrolled", window.scrollY > 8); }
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
-
-  // Fade sections in as they enter the viewport.
-  if ("IntersectionObserver" in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("shown");
-          io.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: "0px 0px -60px 0px" });
-    document.querySelectorAll(".fade, .project").forEach(function (el) { io.observe(el); });
-  } else {
-    document.querySelectorAll(".fade, .project").forEach(function (el) { el.classList.add("shown"); });
-  }
 })();
