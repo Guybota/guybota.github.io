@@ -116,6 +116,21 @@
     touchX = null;
   });
 
+  // Screenshots tilt towards the pointer.
+  if (window.matchMedia("(hover: hover) and (prefers-reduced-motion: no-preference)").matches) {
+    document.querySelectorAll(".shot").forEach(function (shot) {
+      shot.addEventListener("pointermove", function (e) {
+        var r = shot.getBoundingClientRect();
+        shot.style.setProperty("--ry", ((e.clientX - r.left) / r.width - 0.5) * 10 + "deg");
+        shot.style.setProperty("--rx", (0.5 - (e.clientY - r.top) / r.height) * 10 + "deg");
+      });
+      shot.addEventListener("pointerleave", function () {
+        shot.style.removeProperty("--rx");
+        shot.style.removeProperty("--ry");
+      });
+    });
+  }
+
   // Header border once the page is scrolled.
   var top = document.querySelector(".top");
   function onScroll() { top.classList.toggle("scrolled", window.scrollY > 8); }
