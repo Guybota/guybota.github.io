@@ -67,6 +67,7 @@
         <li><a href="#p-superbug" style="--c:#2bb3a0"><span class="t">Superbug</span><span class="d">Unity, Solo, MSc dissertation</span><span class="y">2026</span></a></li>
         <li><a href="#p-scoundrel" style="--c:#3d8a4f"><span class="t">Scoundrel Tower</span><span class="d">Unity, Solo, WebGL</span><span class="y">2026</span></a></li>
         <li><a href="#p-mtg" style="--c:#b3362c"><span class="t">MTG Life Counter</span><span class="d">JavaScript, Solo, Web app</span><span class="y">2026</span></a></li>
+        <li><a href="#p-tempo" style="--c:#2a78d6"><span class="t">Tempo</span><span class="d">TypeScript, React, Solo, Web app</span><span class="y">2026</span></a></li>
         <li><a href="#p-md" style="--c:#3f6fa8"><span class="t">Minho Defenders</span><span class="d">JavaScript, Solo, AI game jam</span><span class="y">2026</span></a></li>
         <li><a href="#p-up" style="--c:#6f9a78"><span class="t">Unbreakable Phone</span><span class="d">Unreal Engine 5, Team of 5</span><span class="y">2025</span></a></li>
         <li><a href="#p-newsdle" style="--c:#4c5bd4"><span class="t">Newsdle</span><span class="d">HTML5, Team of 2</span><span class="y">2025</span></a></li>
@@ -153,8 +154,35 @@
         </div>
       </article>
 
+      <!-- Tempo -->
+      <article class="project flip" id="p-tempo" style="--c:#2a78d6">
+        <div class="wrap project-inner">
+          <div class="media phones">
+            <button class="shot" data-gallery="tempo" data-index="0" aria-label="View Tempo screenshots">
+              <img src="images/projects/tempo-1.webp" alt="Tempo: current conditions in Lisbon over an animated sky, above the hourly temperature chart" width="824" height="1830" loading="lazy">
+            </button>
+            <button class="shot" data-gallery="tempo" data-index="1" aria-label="View the Tempo 10-day forecast">
+              <img src="images/projects/tempo-2.webp" alt="Tempo: 10-day forecast with a temperature range bar for each day, above the wind, rain, UV and humidity cards" width="824" height="1830" loading="lazy">
+            </button>
+          </div>
+          <div class="info">
+            <h3>Tempo</h3>
+            <ul class="tags"><li>2026</li><li>TypeScript, React</li><li>Solo</li><li>Web app</li></ul>
+            <p>A weather app for Portugal, built on the open data of IPMA, the Portuguese weather service. It shows the current conditions, an hourly chart, a 10-day forecast and the official warnings for the selected place, and is designed to feel like a native iPhone app when installed on the home screen.</p>
+            <ul>
+              <li>Hourly chart for temperature, rain and wind, drawn in SVG without a chart library. It follows the current time and can be scrubbed by touch or with the arrow keys.</li>
+              <li>Touch interactions: swipe sideways between saved places, pull to refresh, sheets that drag to dismiss and drag to reorder the list of places.</li>
+              <li>A Cloudflare Worker proxies IPMA and Open-Meteo, validates each response before caching it and serves the last good copy when a source is down. The forecast source can be changed in the settings.</li>
+              <li>Animated sky behind the current conditions, drawn in a WebGL shader, with a static fallback and support for reduced motion.</li>
+              <li>Installable PWA with light and dark themes, in English and Portuguese, with 28 Vitest tests run in CI.</li>
+            </ul>
+            <p class="actions"><a href="https://guybota.tempo-portugal.workers.dev" target="_blank" rel="noopener">Open the app</a> <a href="https://github.com/Guybota/Weather" target="_blank" rel="noopener">Source on GitHub</a></p>
+          </div>
+        </div>
+      </article>
+
       <!-- Minho Defenders -->
-      <article class="project flip" id="p-md" style="--c:#3f6fa8">
+      <article class="project" id="p-md" style="--c:#3f6fa8">
         <div class="wrap project-inner">
           <div class="media">
             <button class="shot" data-gallery="md" data-index="0" aria-label="View Minho Defenders screenshots">
@@ -178,7 +206,7 @@
       </article>
 
       <!-- Unbreakable Phone -->
-      <article class="project" id="p-up" style="--c:#6f9a78">
+      <article class="project flip" id="p-up" style="--c:#6f9a78">
         <div class="wrap project-inner">
           <div class="media">
             <button class="shot" data-gallery="up" data-index="0" aria-label="View Unbreakable Phone screenshots">
@@ -198,7 +226,7 @@
       </article>
 
       <!-- Newsdle -->
-      <article class="project flip" id="p-newsdle" style="--c:#4c5bd4">
+      <article class="project" id="p-newsdle" style="--c:#4c5bd4">
         <div class="wrap project-inner">
           <div class="media">
             <button class="shot" data-gallery="newsdle" data-index="0" aria-label="View Newsdle screenshots">
@@ -220,7 +248,7 @@
       </article>
 
       <!-- Volcano Heart -->
-      <article class="project" id="p-vh" style="--c:#e0622a">
+      <article class="project flip" id="p-vh" style="--c:#e0622a">
         <div class="wrap project-inner">
           <div class="media">
             <button class="shot" data-gallery="vh" data-index="0" aria-label="View Volcano Heart screenshots">
@@ -240,7 +268,7 @@
       </article>
 
       <!-- Lords of Conflict -->
-      <article class="project flip" id="p-loc" style="--c:#b8904a">
+      <article class="project" id="p-loc" style="--c:#b8904a">
         <div class="wrap project-inner">
           <div class="media">
             <button class="shot" data-gallery="loc" data-index="0" aria-label="View Lords of Conflict screenshots">

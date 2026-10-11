@@ -18,6 +18,12 @@
       ["images/projects/mtg-stats.webp", "Win rate of each deck"],
       ["images/projects/mtg-menu.webp", "Game modes"]
     ],
+    tempo: [
+      ["images/projects/tempo-1.webp", "Current conditions and the hourly chart"],
+      ["images/projects/tempo-2.webp", "10-day forecast"],
+      ["images/projects/tempo-3.webp", "Hourly chart and the hour strip"],
+      ["images/projects/tempo-desktop.webp", "Desktop layout in dark mode"]
+    ],
     md: [
       ["images/projects/md-1.webp", "Monção and the Coca dragon"],
       ["images/projects/md-2.webp", "Forte da Lagarteira and the Lagarteira Octopus"],
